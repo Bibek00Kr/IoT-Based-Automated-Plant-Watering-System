@@ -15,16 +15,6 @@ This project automates plant care by:
 
 It’s perfect for busy plant parents or anyone exploring the magic of **IoT + Web Development**.
 
----
-
-## 📸 UI Showcase
-
-| 🌱 Plant Selection | 📊 Live Moisture Monitoring |
-|-------------------|-----------------------------|
-| ![Peace Lily](https://m.media-amazon.com/images/I/51TV6W-ETmL.jpg) | ![Pothos](https://images.unsplash.com/photo-1598880940080-ff9a29891b85) |
-
----
-
 ## 🧠 Tech Stack
 
 | Layer        | Tools Used                                      |
