@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Smart Plant Care</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Splash Screen -->
+    <div class="splash-screen" id="splashScreen">
+        <div class="loader">
+            <div class="leaf"></div>
+            <div class="leaf"></div>
+            <div class="leaf"></div>
+        </div>
+        <h1>Plant Care System</h1>
+    </div>
+
+    <!-- Plant Selection -->
+    <div class="plant-selection" id="plantSelection">
+        <h2>Select Your Plant</h2>
+        <div class="plant-grid">
+            <div class="plant-card" data-plant="peace_lily">
+                <img src="https://m.media-amazon.com/images/I/51TV6W-ETmL.jpg" alt="Peace Lily">
+                <div class="plant-info">
+                    <h3>Peace Lily</h3>
+                    <button class="select-btn">Select</button>
+                </div>
+            </div>
+
+            <div class="plant-card" data-plant="snake_plant">
+                <img src="https://m.media-amazon.com/images/I/61UzIJy5x4L._SL1500_.jpg" alt="Snake Plant">
+                <div class="plant-info">
+                    <h3>Snake Plant</h3>
+                    <button class="select-btn">Select</button>
+                </div>
+            </div>
+
+            <div class="plant-card" data-plant="pothos">
+                <img src="https://images.unsplash.com/photo-1598880940080-ff9a29891b85" alt="Pothos">
+                <div class="plant-info">
+                    <h3>Golden Pothos</h3>
+                    <button class="select-btn">Select</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dashboard -->
+    <div class="dashboard" id="dashboard">
+        <header>
+            <button class="back-btn" id="backBtn">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+            <h1 id="dashboardTitle"></h1>
+            <div class="status">
+                <span class="status-dot" id="statusDot"></span>
+                <span>Device</span>
+            </div>
+        </header>
+
+        <main>
+            <div class="gauge-container">
+                <div class="gauge">
+                    <div class="gauge-fill" id="gaugeFill"></div>
+                    <div class="gauge-value" id="gaugeValue">0%</div>
+                </div>
+                <h2>Soil Moisture</h2>
+            </div>
+
+            <div class="controls">
+                <button class="control-btn water-btn" id="waterBtn">
+                    <i class="fa-sharp-duotone fa-solid fa-faucet-drip"></i> Water Plant
+                </button>
+                <button class="control-btn fert-btn" id="fertBtn">
+                    <i class="fas fa-seedling fa-fw mr-2"> </i> Fertilizer
+                </button>
+            </div>
+
+            <div class="info-grid">
+                <div class="info-card">
+                    <i class="fas fa-clock mr-2"> </i> 
+                    <h3>Last Watered</h3>
+                    <p id="lastWatered">-</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-battery-full mr-2"> </i> 
+                    <h3>Battery</h3>
+                    <p id="batteryLevel">100%</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
